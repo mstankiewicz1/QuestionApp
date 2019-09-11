@@ -22613,7 +22613,7 @@ var Quiz = function (_React$Component) {
         key: 'componentDidUpdate',
 
 
-        //updates the component
+        //updates component
         value: function componentDidUpdate(prevProps, prevState) {
             var currentQuestion = this.state.currentQuestion;
 
@@ -22653,7 +22653,7 @@ var Quiz = function (_React$Component) {
                         null,
                         'Koniec Gry Twoj wynik to ',
                         this.state.score,
-                        ' punktow'
+                        ' punkt\xF3w'
                     ),
                     _react2.default.createElement(
                         'p',
@@ -22674,7 +22674,7 @@ var Quiz = function (_React$Component) {
                 'div',
                 { className: 'QuizApp' },
                 _react2.default.createElement(
-                    'h2',
+                    'h1',
                     null,
                     questions
                 ),

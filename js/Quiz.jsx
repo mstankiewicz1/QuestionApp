@@ -46,7 +46,7 @@ class Quiz extends React.Component {
         }
     };
 
-    //updates the component
+    //updates component
     componentDidUpdate(prevProps, prevState){
         const {currentQuestion} = this.state;
         if (this.state.currentQuestion !== prevState.currentQuestion){
@@ -84,7 +84,7 @@ class Quiz extends React.Component {
         if (QuizEnd){
             return(
                 <div>
-                    <h2>Koniec Gry Twoj wynik to {this.state.score} punktow</h2>
+                    <h2>Koniec Gry Twoj wynik to {this.state.score} punktów</h2>
                     <p>Poprawne odpowiedzi to: </p>
                     {QuizData.map((item, index) => (
                         <li key={index}>
@@ -99,7 +99,7 @@ class Quiz extends React.Component {
 
             return (
                 <div className="QuizApp">
-                    <h2>{questions}</h2>
+                    <h1>{questions}</h1>
                     <span>{`Pytanie ${currentQuestion + 1} z ${QuizData.length}`}</span>
                     {options.map(option => (
                         <p key={option.id}
