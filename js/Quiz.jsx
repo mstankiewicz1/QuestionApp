@@ -30,9 +30,15 @@ class Quiz extends React.Component {
 
 
     render() {
+        const {questions, options} = this.state;
         return (
             <div className="QuizApp">
-                {this.state.questions}
+                {questions}
+                {options.map(option => (
+                    <p key={option.id}>
+                        {option}
+                    </p>
+                ))}
             </div>
         )
     }

@@ -22582,10 +22582,21 @@ var Quiz = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _state = this.state,
+                questions = _state.questions,
+                options = _state.options;
+
             return _react2.default.createElement(
                 'div',
                 { className: 'QuizApp' },
-                this.state.questions
+                questions,
+                options.map(function (option) {
+                    return _react2.default.createElement(
+                        'p',
+                        { key: option.id },
+                        option
+                    );
+                })
             );
         }
     }]);
