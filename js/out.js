@@ -22674,6 +22674,11 @@ var Quiz = function (_React$Component) {
                 'div',
                 { className: 'QuizApp' },
                 _react2.default.createElement(
+                    'div',
+                    { className: 'mainHeader' },
+                    'Ankieta o sporcie'
+                ),
+                _react2.default.createElement(
                     'h1',
                     null,
                     questions

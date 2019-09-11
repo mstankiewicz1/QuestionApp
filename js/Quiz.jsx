@@ -99,6 +99,7 @@ class Quiz extends React.Component {
 
             return (
                 <div className="QuizApp">
+                    <div className="mainHeader">Ankieta o sporcie</div>
                     <h1>{questions}</h1>
                     <span>{`Pytanie ${currentQuestion + 1} z ${QuizData.length}`}</span>
                     {options.map(option => (

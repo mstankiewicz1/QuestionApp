@@ -4,6 +4,12 @@
 
 
 
+ .mainHeader {
+     color: #003952;
+     font-size: 6vw;
+     font-weight: bold;
+ }
+
  h1 {
      color: #00BFA5;
      font-size: 6vw;
