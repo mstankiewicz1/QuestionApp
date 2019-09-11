@@ -22571,6 +22571,10 @@ var Quiz = function (_React$Component) {
                     answers: _QuizData2.default[currentQuestion].answer
                 };
             });
+        }, _this.nextQuestionHandle = function () {
+            _this.setState({
+                currentQuestion: _this.state.currentQuestion + 1
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22578,6 +22582,24 @@ var Quiz = function (_React$Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.loadQuiz();
+        }
+    }, {
+        key: 'componentDidUpdate',
+
+
+        //updates the component
+        value: function componentDidUpdate(prevProps, prevState) {
+            var currentQuestion = this.state.currentQuestion;
+
+            if (this.state.currentQuestion !== prevState.currentQuestion) {
+                this.setState(function () {
+                    return {
+                        questions: _QuizData2.default[currentQuestion].question,
+                        options: _QuizData2.default[currentQuestion].options,
+                        answers: _QuizData2.default[currentQuestion].answer
+                    };
+                });
+            }
         }
     }, {
         key: 'render',
@@ -22596,7 +22618,12 @@ var Quiz = function (_React$Component) {
                         { key: option.id },
                         option
                     );
-                })
+                }),
+                _react2.default.createElement(
+                    'button',
+                    { onClick: this.nextQuestionHandle },
+                    'Next'
+                )
             );
         }
     }]);
