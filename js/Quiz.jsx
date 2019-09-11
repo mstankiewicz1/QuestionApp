@@ -8,7 +8,10 @@ class Quiz extends React.Component {
     state = {
       userAnswer: null,
       currentQuestion: 0,
-      options: []
+      options: [],
+      QuizEnd: false,
+      score: 0,
+      disabled: true
     };
 
 
@@ -29,9 +32,18 @@ class Quiz extends React.Component {
     }
 
     nextQuestionHandle = () => {
+
+        const {userAnswer, answers, score} = this.state;
+
         this.setState({
             currentQuestion: this.state.currentQuestion + 1,
         });
+        /*zliczanie punktów*/
+        if (userAnswer === answers){
+            this.setState({
+                score: score + 1,
+            })
+        }
     };
 
     //updates the component
@@ -40,6 +52,7 @@ class Quiz extends React.Component {
         if (this.state.currentQuestion !== prevState.currentQuestion){
             this.setState(() => {
                 return {
+                    disabled: true,
                     questions: QuizData[currentQuestion].question,
                     options: QuizData[currentQuestion].options,
                     answers: QuizData[currentQuestion].answer,
@@ -52,37 +65,59 @@ class Quiz extends React.Component {
     checkedAnswer = answer => {
       this.setState({
           userAnswer: answer,
+          disabled: false
       })
     };
 
     finishHandle = () => {
-
+        if (this.state.currentQuestion === QuizData.length - 1){
+            this.setState({
+                QuizEnd: true
+            })
+        }
     };
 
 
     render() {
-        const {questions, options, currentQuestion, userAnswer} = this.state;
-        return (
-            <div className="QuizApp">
-                <h2>{questions}</h2>
-                <span>{`Pytanie ${currentQuestion} z ${QuizData.length - 1}`}</span>
-                {options.map(option => (
-                    <p key={option.id}
-                        className={`optionStyle ${userAnswer === option ? "selected" : null}`}
-                        onClick={() => this.checkedAnswer(option)}
-                    >
-                        {option}
-                    </p>
-                ))}
-                {currentQuestion < QuizData.length - 1 &&
-                    <button onClick={this.nextQuestionHandle}>Next</button>
-                }
-                {currentQuestion === QuizData.length - 1 &&
-                    <button onClick={this.finishHandle}>Finish</button>
-                }
-            </div>
-        )
+        const {questions, options, currentQuestion, userAnswer, QuizEnd} = this.state;
+
+        if (QuizEnd){
+            return(
+                <div>
+                    <h2>Koniec Gry Twoj wynik to {this.state.score} punktow</h2>
+                    <p>Poprawne odpowiedzi to: </p>
+                    {QuizData.map((item, index) => (
+                        <li key={index}>
+                            {item.answer}
+                        </li>
+                        ))
+                    }
+                </div>
+            )
+        }
+
+
+            return (
+                <div className="QuizApp">
+                    <h2>{questions}</h2>
+                    <span>{`Pytanie ${currentQuestion} z ${QuizData.length - 1}`}</span>
+                    {options.map(option => (
+                        <p key={option.id}
+                           className={`optionStyle ${userAnswer === option ? "selected" : null}`}
+                           onClick={() => this.checkedAnswer(option)}
+                        >
+                            {option}
+                        </p>
+                    ))}
+                    {currentQuestion < QuizData.length - 1 &&
+                    <button onClick={this.nextQuestionHandle} disabled={this.state.disabled}>Next</button>
+                    }
+                    {currentQuestion === QuizData.length - 1 &&
+                    <button disabled={this.state.disabled} onClick={this.finishHandle}>Finish</button>
+                    }
+                </div>
+            )
+        }
     }
-}
 
 export default Quiz;
