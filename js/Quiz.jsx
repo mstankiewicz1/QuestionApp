@@ -55,6 +55,10 @@ class Quiz extends React.Component {
       })
     };
 
+    finishHandle = () => {
+
+    };
+
 
     render() {
         const {questions, options, currentQuestion, userAnswer} = this.state;
@@ -70,7 +74,12 @@ class Quiz extends React.Component {
                         {option}
                     </p>
                 ))}
-                <button onClick={this.nextQuestionHandle}>Next</button>
+                {currentQuestion < QuizData.length - 1 &&
+                    <button onClick={this.nextQuestionHandle}>Next</button>
+                }
+                {currentQuestion === QuizData.length - 1 &&
+                    <button onClick={this.finishHandle}>Finish</button>
+                }
             </div>
         )
     }

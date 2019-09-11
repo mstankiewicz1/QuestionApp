@@ -22579,7 +22579,7 @@ var Quiz = function (_React$Component) {
             _this.setState({
                 userAnswer: answer
             });
-        }, _temp), _possibleConstructorReturn(_this, _ret);
+        }, _this.finishHandle = function () {}, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(Quiz, [{
@@ -22644,10 +22644,15 @@ var Quiz = function (_React$Component) {
                         option
                     );
                 }),
-                _react2.default.createElement(
+                currentQuestion < _QuizData2.default.length - 1 && _react2.default.createElement(
                     'button',
                     { onClick: this.nextQuestionHandle },
                     'Next'
+                ),
+                currentQuestion === _QuizData2.default.length - 1 && _react2.default.createElement(
+                    'button',
+                    { onClick: this.finishHandle },
+                    'Finish'
                 )
             );
         }
