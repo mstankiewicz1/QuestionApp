@@ -48,14 +48,25 @@ class Quiz extends React.Component {
         }
     }
 
+    /*checkedAnswer*/
+    checkedAnswer = answer => {
+      this.setState({
+          userAnswer: answer,
+      })
+    };
+
 
     render() {
-        const {questions, options} = this.state;
+        const {questions, options, currentQuestion, userAnswer} = this.state;
         return (
             <div className="QuizApp">
-                {questions}
+                <h2>{questions}</h2>
+                <span>{`Pytanie ${currentQuestion} z ${QuizData.length - 1}`}</span>
                 {options.map(option => (
-                    <p key={option.id}>
+                    <p key={option.id}
+                        className={`optionStyle ${userAnswer === option ? "selected" : null}`}
+                        onClick={() => this.checkedAnswer(option)}
+                    >
                         {option}
                     </p>
                 ))}

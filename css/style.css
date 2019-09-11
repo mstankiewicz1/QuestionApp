@@ -5,3 +5,11 @@
  .QuizApp {
      text-align: center;
  }
+
+ .optionStyle {
+     background-color: red;
+ }
+
+ .selected {
+     background-color: chartreuse;
+ }

@@ -22575,6 +22575,10 @@ var Quiz = function (_React$Component) {
             _this.setState({
                 currentQuestion: _this.state.currentQuestion + 1
             });
+        }, _this.checkedAnswer = function (answer) {
+            _this.setState({
+                userAnswer: answer
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22601,21 +22605,42 @@ var Quiz = function (_React$Component) {
                 });
             }
         }
+
+        /*checkedAnswer*/
+
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             var _state = this.state,
                 questions = _state.questions,
-                options = _state.options;
+                options = _state.options,
+                currentQuestion = _state.currentQuestion,
+                userAnswer = _state.userAnswer;
 
             return _react2.default.createElement(
                 'div',
                 { className: 'QuizApp' },
-                questions,
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    questions
+                ),
+                _react2.default.createElement(
+                    'span',
+                    null,
+                    'Pytanie ' + currentQuestion + ' z ' + (_QuizData2.default.length - 1)
+                ),
                 options.map(function (option) {
                     return _react2.default.createElement(
                         'p',
-                        { key: option.id },
+                        { key: option.id,
+                            className: 'optionStyle ' + (userAnswer === option ? "selected" : null),
+                            onClick: function onClick() {
+                                return _this2.checkedAnswer(option);
+                            }
+                        },
                         option
                     );
                 }),
