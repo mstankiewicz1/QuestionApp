@@ -2,34 +2,59 @@
      box-sizing: border-box;
  }
 
-
+ .QuizApp {
+     text-align: center;
+     border: 2px solid blue;
+     height: 100vh;
+ }
 
  .mainHeader {
      color: #003952;
-     font-size: 6vw;
+     font-size: 7vw;
      font-weight: bold;
- }
-
- span.numberOfQuestion {
-     color: #003952;
-     font-size: 6vw;
+     margin-top: 6vh;
+     margin-bottom: 6vh;
  }
 
  h1 {
      color: #00BFA5;
      font-size: 6vw;
+     font-weight: bold;
+     margin-bottom: 5vh;
  }
 
- .QuizApp {
-     text-align: center;
-     border: 2px solid blue;
+ span.numberOfQuestion {
+     color: #003952;
+     font-size: 6vw;
+     font-weight: bold;
+ }
+
+ .groupQuestion {
+     margin-top: 5vh;
+     margin-bottom: 7vh;
  }
 
  .optionStyle {
-     background-color: red;
-     color: #C8C8C8;
+     color: #808080;
+     margin-bottom: 2vh;
+     font-size: 5vw;
+     font-weight: bold;
+     height: 10vw;
+     border-radius: 5px;
+     width: 80%;
+     margin-right: 10%;
+     margin-left: 10%;
  }
 
  .selected {
-     background-color: chartreuse;
+     color: #00BFA5;
+ }
+
+ .buttonNext {
+     background-color: #00BFA5;
+     font-weight: bold;
+     border-radius: 10px;
+     width: 30vw;
+     height: 13vw;
+     font-size: 6vw;
  }

@@ -22688,21 +22688,25 @@ var Quiz = function (_React$Component) {
                     { className: 'numberOfQuestion' },
                     'Pytanie ' + (currentQuestion + 1) + ' z ' + _QuizData2.default.length
                 ),
-                options.map(function (option) {
-                    return _react2.default.createElement(
-                        'p',
-                        { key: option.id,
-                            className: 'optionStyle ' + (userAnswer === option ? "selected" : null),
-                            onClick: function onClick() {
-                                return _this2.checkedAnswer(option);
-                            }
-                        },
-                        option
-                    );
-                }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'groupQuestion' },
+                    options.map(function (option) {
+                        return _react2.default.createElement(
+                            'p',
+                            { key: option.id,
+                                className: 'optionStyle ' + (userAnswer === option ? "selected" : null),
+                                onClick: function onClick() {
+                                    return _this2.checkedAnswer(option);
+                                }
+                            },
+                            option
+                        );
+                    })
+                ),
                 currentQuestion < _QuizData2.default.length - 1 && _react2.default.createElement(
                     'button',
-                    { onClick: this.nextQuestionHandle, disabled: this.state.disabled },
+                    { className: 'buttonNext', onClick: this.nextQuestionHandle, disabled: this.state.disabled },
                     'Next'
                 ),
                 currentQuestion === _QuizData2.default.length - 1 && _react2.default.createElement(

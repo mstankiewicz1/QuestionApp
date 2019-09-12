@@ -102,16 +102,18 @@ class Quiz extends React.Component {
                     <div className="mainHeader">Ankieta o sporcie</div>
                     <h1>{questions}</h1>
                     <span className="numberOfQuestion">{`Pytanie ${currentQuestion + 1} z ${QuizData.length}`}</span>
-                    {options.map(option => (
-                        <p key={option.id}
-                           className={`optionStyle ${userAnswer === option ? "selected" : null}`}
-                           onClick={() => this.checkedAnswer(option)}
-                        >
-                            {option}
-                        </p>
-                    ))}
+                    <div className="groupQuestion">
+                        {options.map(option => (
+                            <p key={option.id}
+                               className={`optionStyle ${userAnswer === option ? "selected" : null}`}
+                               onClick={() => this.checkedAnswer(option)}
+                            >
+                                {option}
+                            </p>
+                        ))}
+                    </div>
                     {currentQuestion < QuizData.length - 1 &&
-                    <button onClick={this.nextQuestionHandle} disabled={this.state.disabled}>Next</button>
+                    <button className="buttonNext" onClick={this.nextQuestionHandle} disabled={this.state.disabled}>Next</button>
                     }
                     {currentQuestion === QuizData.length - 1 &&
                     <button disabled={this.state.disabled} onClick={this.finishHandle}>Finish</button>
