@@ -10,6 +10,11 @@
      font-weight: bold;
  }
 
+ span.numberOfQuestion {
+     color: #003952;
+     font-size: 6vw;
+ }
+
  h1 {
      color: #00BFA5;
      font-size: 6vw;
@@ -22,6 +27,7 @@
 
  .optionStyle {
      background-color: red;
+     color: #C8C8C8;
  }
 
  .selected {

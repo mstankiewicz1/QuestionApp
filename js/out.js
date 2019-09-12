@@ -22685,7 +22685,7 @@ var Quiz = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'span',
-                    null,
+                    { className: 'numberOfQuestion' },
                     'Pytanie ' + (currentQuestion + 1) + ' z ' + _QuizData2.default.length
                 ),
                 options.map(function (option) {

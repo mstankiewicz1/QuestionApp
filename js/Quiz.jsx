@@ -101,7 +101,7 @@ class Quiz extends React.Component {
                 <div className="QuizApp">
                     <div className="mainHeader">Ankieta o sporcie</div>
                     <h1>{questions}</h1>
-                    <span>{`Pytanie ${currentQuestion + 1} z ${QuizData.length}`}</span>
+                    <span className="numberOfQuestion">{`Pytanie ${currentQuestion + 1} z ${QuizData.length}`}</span>
                     {options.map(option => (
                         <p key={option.id}
                            className={`optionStyle ${userAnswer === option ? "selected" : null}`}
