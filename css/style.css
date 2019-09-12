@@ -10,7 +10,7 @@
 
  .mainHeader {
      color: #003952;
-     font-size: 7vw;
+     font-size: 8vw;
      font-weight: bold;
      margin-top: 6vh;
      margin-bottom: 6vh;
@@ -20,6 +20,9 @@
      color: #00BFA5;
      font-size: 6vw;
      font-weight: bold;
+     text-align: center;
+     width: 80%;
+     margin: 0 auto;
      margin-bottom: 5vh;
  }
 
@@ -30,14 +33,14 @@
  }
 
  .groupQuestion {
-     margin-top: 5vh;
+     margin-top: 7vh;
      margin-bottom: 7vh;
  }
 
  .optionStyle {
      color: #808080;
      margin-bottom: 2vh;
-     font-size: 5vw;
+     font-size: 6vw;
      font-weight: bold;
      height: 10vw;
      border-radius: 5px;
@@ -57,4 +60,8 @@
      width: 30vw;
      height: 13vw;
      font-size: 6vw;
+ }
+
+ .buttonNext:enabled{
+     color: white;
  }
