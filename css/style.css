@@ -4,7 +4,6 @@
 
  .QuizApp {
      text-align: center;
-     border: 2px solid blue;
      height: 100vh;
  }
 
@@ -23,7 +22,7 @@
      text-align: center;
      width: 80%;
      margin: 0 auto;
-     margin-bottom: 5vh;
+     margin-bottom: 3vh;
  }
 
  span.numberOfQuestion {
@@ -33,32 +32,40 @@
  }
 
  .groupQuestion {
-     margin-top: 7vh;
+     margin-top: 10vw;
      margin-bottom: 7vh;
  }
 
  .optionStyle {
-     color: #808080;
-     margin-bottom: 2vh;
+     color: #00BFA5;
+     margin: 0 auto;
+     margin-top: 5vw;
+     margin-bottom: 5vw;
+     padding: 3vw;
      font-size: 6vw;
      font-weight: bold;
-     height: 10vw;
      border-radius: 5px;
-     width: 80%;
-     margin-right: 10%;
-     margin-left: 10%;
+     border: 2px solid #00BFA5;
+     width: 60%;
  }
 
  .selected {
-     color: #00BFA5;
+     margin: 0 auto;
+     margin-top: 5vw;
+     margin-bottom: 5vw;
+     color: white;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+     background-color: #00BFA5;
+     width: 60%;
  }
 
  .buttonNext {
-     background-color: #00BFA5;
+     background-color: #003952;
      font-weight: bold;
      border-radius: 10px;
-     width: 30vw;
-     height: 13vw;
+     width: 35vw;
+     height: 16vw;
      font-size: 6vw;
  }
 
