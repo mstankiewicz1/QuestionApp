@@ -84,8 +84,9 @@ class Quiz extends React.Component {
         if (QuizEnd){
             return(
                 <div>
-                    <h2>Koniec Gry Twoj wynik to {this.state.score} punktów</h2>
-                    <p>Poprawne odpowiedzi to: </p>
+                    <h2>Koniec Gry !</h2>
+                    <h2>Twój wynik to {this.state.score} punkty!</h2>
+                    <p className="titleCorrectAnswer">Poprawne odpowiedzi to: </p>
                     {QuizData.map((item, index) => (
                         <li key={index}>
                             {item.answer}
@@ -116,7 +117,7 @@ class Quiz extends React.Component {
                     <button className="buttonNext" onClick={this.nextQuestionHandle} disabled={this.state.disabled}>Next</button>
                     }
                     {currentQuestion === QuizData.length - 1 &&
-                    <button disabled={this.state.disabled} onClick={this.finishHandle}>Finish</button>
+                    <button className="finishButton" disabled={this.state.disabled} onClick={this.finishHandle}>Finish</button>
                     }
                 </div>
             )

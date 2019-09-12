@@ -22651,13 +22651,18 @@ var Quiz = function (_React$Component) {
                     _react2.default.createElement(
                         'h2',
                         null,
-                        'Koniec Gry Twoj wynik to ',
+                        'Koniec Gry !'
+                    ),
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        'Tw\xF3j wynik to ',
                         this.state.score,
-                        ' punkt\xF3w'
+                        ' punkty!'
                     ),
                     _react2.default.createElement(
                         'p',
-                        null,
+                        { className: 'titleCorrectAnswer' },
                         'Poprawne odpowiedzi to: '
                     ),
                     _QuizData2.default.map(function (item, index) {
@@ -22711,7 +22716,7 @@ var Quiz = function (_React$Component) {
                 ),
                 currentQuestion === _QuizData2.default.length - 1 && _react2.default.createElement(
                     'button',
-                    { disabled: this.state.disabled, onClick: this.finishHandle },
+                    { className: 'finishButton', disabled: this.state.disabled, onClick: this.finishHandle },
                     'Finish'
                 )
             );

@@ -2,6 +2,44 @@
      box-sizing: border-box;
  }
 
+ /********************************************/
+
+h2 {
+    color: #003952;
+    font-size: 8vw;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    text-align: center;
+    width: 80%;
+}
+
+.titleCorrectAnswer {
+    font-size: 7vw;
+    text-align: center;
+    color: #003952;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+li {
+    font-size: 6vw;
+    color: #00BFA5;
+    padding: 3vw;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10vw;
+}
+
+li:last-child {
+    margin-bottom: 6vh;
+}
+
+ /****************************************/
+
  .QuizApp {
      text-align: center;
      height: 100vh;
@@ -58,6 +96,7 @@
      padding-bottom: 3vw;
      background-color: #00BFA5;
      width: 60%;
+     transition-duration: .3s;
  }
 
  .buttonNext {
@@ -67,8 +106,23 @@
      width: 35vw;
      height: 16vw;
      font-size: 6vw;
+     transition-duration: .3s;
  }
 
  .buttonNext:enabled{
+     color: white;
+ }
+
+ .finishButton {
+     background-color: #003952;
+     font-weight: bold;
+     border-radius: 10px;
+     width: 35vw;
+     height: 16vw;
+     font-size: 6vw;
+     transition-duration: .3s;
+ }
+
+ .finishButton:enabled{
      color: white;
  }
