@@ -7,9 +7,9 @@ const QuizData = [
                     },
                     {
                         id: 1,
-                        question: 'Dyscyplina sportowa i określone pojęcia. Które pojęcie nie pasuje do dyscypliny sportowej ?',
-                        options: ['kwarta - koszykówka', 'tercja - hokej na lodzie', 'gem - piłka wodna'],
-                        answer: 'gem - piłka wodna',
+                        question: 'Co nie jest dyscypliną olimpijską ?',
+                        options: ['baseball', 'łucznictwo', 'jeździectwo'],
+                        answer: 'baseball',
                     },
                     {
                         id: 2,

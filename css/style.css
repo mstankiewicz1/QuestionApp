@@ -15,6 +15,15 @@ h2 {
     width: 80%;
 }
 
+
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     h2 {
+         font-size: 6vw;
+         width: 80%;
+     }
+ }
+
+
 .titleCorrectAnswer {
     font-size: 7vw;
     text-align: center;
@@ -25,6 +34,12 @@ h2 {
     margin-bottom: 3vh;
 }
 
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     .titleCorrectAnswer {
+         font-size: 5vw;
+     }
+ }
+
 li {
     font-size: 6vw;
     color: #00BFA5;
@@ -33,6 +48,13 @@ li {
     border-radius: 5px;
     margin-left: 10vw;
 }
+
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     li {
+         font-size: 4vw;
+     }
+ }
+
 
 li:last-child {
     margin-bottom: 6vh;
@@ -53,6 +75,16 @@ li:last-child {
      margin-bottom: 6vh;
  }
 
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     .mainHeader {
+         font-size: 6vw;
+         margin-top: 6vh;
+         margin-bottom: 6vh;
+     }
+ }
+
+
+
  h1 {
      color: #00BFA5;
      font-size: 6vw;
@@ -63,10 +95,24 @@ li:last-child {
      margin-bottom: 3vh;
  }
 
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     h1 {
+         font-size: 4vw;
+         width: 70%;
+     }
+ }
+
  span.numberOfQuestion {
      color: #003952;
      font-size: 6vw;
      font-weight: bold;
+ }
+
+
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     span.numberOfQuestion {
+         font-size: 5vw;
+     }
  }
 
  .groupQuestion {
@@ -85,6 +131,19 @@ li:last-child {
      border-radius: 5px;
      border: 2px solid #00BFA5;
      width: 60%;
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     .optionStyle {
+         margin-top: 3vw;
+         margin-bottom: 3vw;
+         padding: 2vw;
+         font-size: 4vw;
+         font-weight: bold;
+         border-radius: 5px;
+         border: 2px solid #00BFA5;
+         width: 60%;
+     }
  }
 
  .selected {
@@ -107,6 +166,15 @@ li:last-child {
      height: 16vw;
      font-size: 6vw;
      transition-duration: .3s;
+     margin-bottom: 5vh;
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 850px) {
+     .buttonNext {
+         width: 28vw;
+         height: 13vw;
+         font-size: 5vw;
+     }
  }
 
  .buttonNext:enabled{
@@ -121,6 +189,15 @@ li:last-child {
      height: 16vw;
      font-size: 6vw;
      transition-duration: .3s;
+     margin-bottom: 5vh;
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 900px) {
+     .finishButton {
+         width: 28vw;
+         height: 13vw;
+         font-size: 5vw;
+     }
  }
 
  .finishButton:enabled{
