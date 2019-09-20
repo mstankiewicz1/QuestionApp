@@ -16,7 +16,7 @@ h2 {
 }
 
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      h2 {
          font-size: 6vw;
          width: 80%;
@@ -34,7 +34,7 @@ h2 {
     margin-bottom: 3vh;
 }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .titleCorrectAnswer {
          font-size: 5vw;
      }
@@ -49,7 +49,7 @@ li {
     margin-left: 10vw;
 }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      li {
          font-size: 4vw;
      }
@@ -75,7 +75,7 @@ li:last-child {
      margin-bottom: 6vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .mainHeader {
          font-size: 6vw;
          margin-top: 6vh;
@@ -95,7 +95,7 @@ li:last-child {
      margin-bottom: 3vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      h1 {
          font-size: 4vw;
          width: 70%;
@@ -109,7 +109,7 @@ li:last-child {
  }
 
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      span.numberOfQuestion {
          font-size: 5vw;
      }
@@ -133,7 +133,7 @@ li:last-child {
      width: 60%;
  }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .optionStyle {
          margin-top: 3vw;
          margin-bottom: 3vw;
@@ -142,7 +142,7 @@ li:last-child {
          font-weight: bold;
          border-radius: 5px;
          border: 2px solid #00BFA5;
-         width: 60%;
+         width: 50%;
      }
  }
 
@@ -158,6 +158,16 @@ li:last-child {
      transition-duration: .3s;
  }
 
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
+     .selected {
+         margin-top: 3vw;
+         margin-bottom: 3vw;
+         padding-top: 2vw;
+         padding-bottom: 2vw;
+         width: 50%;
+     }
+ }
+
  .buttonNext {
      background-color: #003952;
      font-weight: bold;
@@ -169,11 +179,11 @@ li:last-child {
      margin-bottom: 5vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 850px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .buttonNext {
-         width: 28vw;
-         height: 13vw;
-         font-size: 5vw;
+         width: 24vw;
+         height: 10vw;
+         font-size: 4vw;
      }
  }
 
@@ -192,11 +202,11 @@ li:last-child {
      margin-bottom: 5vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 900px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .finishButton {
-         width: 28vw;
-         height: 13vw;
-         font-size: 5vw;
+         width: 24vw;
+         height: 10vw;
+         font-size: 4vw;
      }
  }
 
