@@ -22658,7 +22658,7 @@ var Quiz = function (_React$Component) {
                         null,
                         'Tw\xF3j wynik to ',
                         this.state.score,
-                        ' punkty!'
+                        ' punkty'
                     ),
                     _react2.default.createElement(
                         'p',

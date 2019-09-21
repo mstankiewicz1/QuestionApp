@@ -85,7 +85,7 @@ class Quiz extends React.Component {
             return(
                 <div>
                     <h2>Koniec Gry !</h2>
-                    <h2>Twój wynik to {this.state.score} punkty!</h2>
+                    <h2>Twój wynik to {this.state.score} punkty</h2>
                     <p className="titleCorrectAnswer">Poprawne odpowiedzi to: </p>
                     {QuizData.map((item, index) => (
                         <li key={index}>
