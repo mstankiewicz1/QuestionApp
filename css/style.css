@@ -6,7 +6,7 @@
 
 h2 {
     color: #003952;
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: bold;
     margin: 0 auto;
     margin-top: 6vh;
@@ -15,7 +15,6 @@ h2 {
     width: 80%;
 }
 
-
  @media screen and (min-width: 700px) and (max-width: 1280px) {
      h2 {
          font-size: 6vw;
@@ -23,9 +22,8 @@ h2 {
      }
  }
 
-
 .titleCorrectAnswer {
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
     color: #003952;
     font-weight: bold;
@@ -41,7 +39,7 @@ h2 {
  }
 
 li {
-    font-size: 6vw;
+    font-size: 5vw;
     color: #00BFA5;
     padding: 3vw;
     font-weight: bold;
@@ -54,7 +52,6 @@ li {
          font-size: 4vw;
      }
  }
-
 
 li:last-child {
     margin-bottom: 6vh;
@@ -69,7 +66,7 @@ li:last-child {
 
  .mainHeader {
      color: #003952;
-     font-size: 8vw;
+     font-size: 7vw;
      font-weight: bold;
      margin-top: 6vh;
      margin-bottom: 6vh;
@@ -83,11 +80,9 @@ li:last-child {
      }
  }
 
-
-
  h1 {
      color: #00BFA5;
-     font-size: 6vw;
+     font-size: 5vw;
      font-weight: bold;
      text-align: center;
      width: 80%;
@@ -104,10 +99,9 @@ li:last-child {
 
  span.numberOfQuestion {
      color: #003952;
-     font-size: 6vw;
+     font-size: 5vw;
      font-weight: bold;
  }
-
 
  @media screen and (min-width: 700px) and (max-width: 1280px) {
      span.numberOfQuestion {
@@ -126,7 +120,7 @@ li:last-child {
      margin-top: 5vw;
      margin-bottom: 5vw;
      padding: 3vw;
-     font-size: 6vw;
+     font-size: 5vw;
      font-weight: bold;
      border-radius: 5px;
      border: 2px solid #00BFA5;
@@ -172,9 +166,9 @@ li:last-child {
      background-color: #003952;
      font-weight: bold;
      border-radius: 10px;
-     width: 35vw;
-     height: 16vw;
-     font-size: 6vw;
+     width: 32vw;
+     height: 14vw;
+     font-size: 5vw;
      transition-duration: .3s;
      margin-bottom: 5vh;
  }
@@ -195,9 +189,9 @@ li:last-child {
      background-color: #003952;
      font-weight: bold;
      border-radius: 10px;
-     width: 35vw;
-     height: 16vw;
-     font-size: 6vw;
+     width: 32vw;
+     height: 14vw;
+     font-size: 5vw;
      transition-duration: .3s;
      margin-bottom: 5vh;
  }
