@@ -15,14 +15,22 @@ h2 {
     width: 80%;
 }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      h2 {
          font-size: 6vw;
-         width: 80%;
+         width: 70%;
      }
  }
 
-.titleCorrectAnswer {
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     h2 {
+         font-size: 4vw;
+         width: 60%;
+     }
+ }
+
+
+ .titleCorrectAnswer {
     font-size: 6vw;
     text-align: center;
     color: #003952;
@@ -32,9 +40,17 @@ h2 {
     margin-bottom: 3vh;
 }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .titleCorrectAnswer {
          font-size: 5vw;
+         width: 70%;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .titleCorrectAnswer {
+         font-size: 3vw;
+         width: 60%;
      }
  }
 
@@ -47,9 +63,15 @@ li {
     margin-left: 10vw;
 }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      li {
          font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     li {
+         font-size: 2vw;
      }
  }
 
@@ -72,9 +94,17 @@ li:last-child {
      margin-bottom: 6vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .mainHeader {
          font-size: 6vw;
+         margin-top: 6vh;
+         margin-bottom: 6vh;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .mainHeader {
+         font-size: 4vw;
          margin-top: 6vh;
          margin-bottom: 6vh;
      }
@@ -90,10 +120,17 @@ li:last-child {
      margin-bottom: 3vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      h1 {
          font-size: 4vw;
          width: 70%;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     h1 {
+         font-size: 3vw;
+         width: 60%;
      }
  }
 
@@ -103,15 +140,36 @@ li:last-child {
      font-weight: bold;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      span.numberOfQuestion {
-         font-size: 5vw;
+         font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     span.numberOfQuestion {
+         font-size: 3vw;
      }
  }
 
  .groupQuestion {
      margin-top: 10vw;
      margin-bottom: 7vh;
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
+     .groupQuestion {
+         margin-top: 7vw;
+         margin-bottom: 6vh;
+     }
+
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .groupQuestion {
+         margin-top: 5vw;
+         margin-bottom: 5vh;
+     }
  }
 
  .optionStyle {
@@ -127,16 +185,20 @@ li:last-child {
      width: 60%;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .optionStyle {
          margin-top: 3vw;
          margin-bottom: 3vw;
          padding: 2vw;
          font-size: 4vw;
-         font-weight: bold;
-         border-radius: 5px;
-         border: 2px solid #00BFA5;
          width: 50%;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .optionStyle {
+         font-size: 3vw;
+         width: 40%;
      }
  }
 
@@ -152,7 +214,7 @@ li:last-child {
      transition-duration: .3s;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .selected {
          margin-top: 3vw;
          margin-bottom: 3vw;
@@ -161,6 +223,13 @@ li:last-child {
          width: 50%;
      }
  }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .selected {
+         width: 40%;
+     }
+ }
+
 
  .buttonNext {
      background-color: #003952;
@@ -173,11 +242,27 @@ li:last-child {
      margin-bottom: 5vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 450px) and (max-width: 699px) {
+     .buttonNext {
+         width: 28vw;
+         height: 11vw;
+         font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .buttonNext {
          width: 24vw;
          height: 10vw;
          font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .buttonNext {
+         width: 20vw;
+         height: 8vw;
+         font-size: 3vw;
      }
  }
 
@@ -196,11 +281,27 @@ li:last-child {
      margin-bottom: 5vh;
  }
 
- @media screen and (min-width: 700px) and (max-width: 1280px) {
+ @media screen and (min-width: 450px) and (max-width: 699px) {
+     .finishButton {
+         width: 28vw;
+         height: 11vw;
+         font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1000px) {
      .finishButton {
          width: 24vw;
          height: 10vw;
          font-size: 4vw;
+     }
+ }
+
+ @media screen and (min-width: 1001px) and (max-width: 1280px) {
+     .finishButton {
+         width: 20vw;
+         height: 8vw;
+         font-size: 3vw;
      }
  }
 
